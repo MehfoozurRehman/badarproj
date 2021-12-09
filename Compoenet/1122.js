@@ -32,7 +32,7 @@ const My1122 = ({ navigation }) => {
                 fontWeight: "bold",
               }}
             >
-              Get Started{" "}
+              Get Started
             </Text>
           </View>
         </View>
@@ -55,7 +55,7 @@ const My1122 = ({ navigation }) => {
               paddingLeft: 30,
             }}
           >
-            Enter Your Mobile Phone Number{" "}
+            Enter Your Mobile Phone Number
           </Text>
           <Text
             style={{
@@ -66,7 +66,7 @@ const My1122 = ({ navigation }) => {
               paddingLeft: 30,
             }}
           >
-            Phone Number{" "}
+            Phone Number
           </Text>
           <KeyboardAvoidingView behavior="padding" style={{ flex: 1 }}>
             <View

@@ -46,11 +46,9 @@ const Bankaccountmsg = ({ navigation }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  {" "}
                   Kelly James
                 </Text>
                 <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                  {" "}
                   New offers for you to see!!
                 </Text>
               </View>
@@ -91,11 +89,9 @@ const Bankaccountmsg = ({ navigation }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  {" "}
                   Kelly James
                 </Text>
                 <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                  {" "}
                   New offers for you to see!!
                 </Text>
               </View>
@@ -136,11 +132,9 @@ const Bankaccountmsg = ({ navigation }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  {" "}
                   Kelly James
                 </Text>
                 <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                  {" "}
                   New offers for you to see!!
                 </Text>
               </View>
@@ -181,11 +175,9 @@ const Bankaccountmsg = ({ navigation }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  {" "}
                   Kelly James
                 </Text>
                 <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                  {" "}
                   New offers for you to see!!
                 </Text>
               </View>
@@ -226,11 +218,9 @@ const Bankaccountmsg = ({ navigation }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  {" "}
                   Kelly James
                 </Text>
                 <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                  {" "}
                   New offers for you to see!!
                 </Text>
               </View>
@@ -271,11 +261,9 @@ const Bankaccountmsg = ({ navigation }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  {" "}
                   Kelly James
                 </Text>
                 <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                  {" "}
                   New offers for you to see!!
                 </Text>
               </View>
@@ -316,11 +304,9 @@ const Bankaccountmsg = ({ navigation }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  {" "}
                   Kelly James
                 </Text>
                 <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                  {" "}
                   New offers for you to see!!
                 </Text>
               </View>
@@ -361,11 +347,9 @@ const Bankaccountmsg = ({ navigation }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  {" "}
                   Kelly James
                 </Text>
                 <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                  {" "}
                   New offers for you to see!!
                 </Text>
               </View>
@@ -407,11 +391,9 @@ const Bankaccountmsg = ({ navigation }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  {" "}
                   Kelly James
                 </Text>
                 <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                  {" "}
                   New offers for you to see!!
                 </Text>
               </View>
@@ -452,11 +434,9 @@ const Bankaccountmsg = ({ navigation }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  {" "}
                   Kelly James
                 </Text>
                 <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                  {" "}
                   New offers for you to see!!
                 </Text>
               </View>
@@ -497,11 +477,9 @@ const Bankaccountmsg = ({ navigation }) => {
                     fontWeight: "bold",
                   }}
                 >
-                  {" "}
                   Kelly James
                 </Text>
                 <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                  {" "}
                   New offers for you to see!!
                 </Text>
               </View>

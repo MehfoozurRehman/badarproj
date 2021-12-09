@@ -25,7 +25,7 @@ const My123457 = ({ navigation }) => {
             fontWeight: "bold",
           }}
         >
-          Get Started{" "}
+          Get Started
         </Text>
       </View>
 
@@ -58,7 +58,7 @@ const My123457 = ({ navigation }) => {
             paddingLeft: 30,
           }}
         >
-          Phone Number{" "}
+          Phone Number
         </Text>
 
         <View style={{ flexDirection: "row", paddingLeft: 30, marginTop: 20 }}>
@@ -106,7 +106,7 @@ const My123457 = ({ navigation }) => {
             paddingTop: 35,
           }}
         >
-          Already Have account? Sign in{" "}
+          Already Have account? Sign in
         </Text>
       </View>
 

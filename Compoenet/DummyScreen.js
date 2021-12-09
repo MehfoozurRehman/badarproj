@@ -63,7 +63,7 @@ const DummyScreen = ({ navigation }) => {
             onPress={() => navigation.navigate("transactioncomp")}
           >
             <Text style={{ color: "white", fontSize: 24, fontWeight: "bold" }}>
-              Transacation Completed{" "}
+              Transacation Completed
             </Text>
           </TouchableOpacity>
         </View>
@@ -73,7 +73,7 @@ const DummyScreen = ({ navigation }) => {
             onPress={() => navigation.navigate("customerphonenum")}
           >
             <Text style={{ color: "white", fontSize: 24, fontWeight: "bold" }}>
-              Customer Phone number{" "}
+              Customer Phone number
             </Text>
           </TouchableOpacity>
         </View>
@@ -90,7 +90,7 @@ const DummyScreen = ({ navigation }) => {
             onPress={() => navigation.navigate("businessofferone")}
           >
             <Text style={{ color: "white", fontSize: 24, fontWeight: "bold" }}>
-              Business Offers One{" "}
+              Business Offers One
             </Text>
           </TouchableOpacity>
         </View>
@@ -100,7 +100,7 @@ const DummyScreen = ({ navigation }) => {
             onPress={() => navigation.navigate("businessoffertwo")}
           >
             <Text style={{ color: "white", fontSize: 24, fontWeight: "bold" }}>
-              Business Offers Two{" "}
+              Business Offers Two
             </Text>
           </TouchableOpacity>
         </View>

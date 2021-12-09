@@ -39,7 +39,7 @@ const GetStarted = ({ navigation }) => {
               fontWeight: "bold",
             }}
           >
-            Easy,Fast & Rewarding Payments{" "}
+            Easy,Fast & Rewarding Payments
           </Text>
 
           <Text

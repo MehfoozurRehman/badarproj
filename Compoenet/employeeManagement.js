@@ -62,12 +62,10 @@ const employeeManagement = ({ navigation }) => {
 
             <View style={{ borderColor: "#FFFFFF" }}>
               <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                {" "}
                 Kelly James
               </Text>
               <View style={{ margin: "2%" }}></View>
               <Text style={{ fontSize: 11, color: "#FFFFFF" }}>
-                {" "}
                 +1 647 653 2353
               </Text>
             </View>
@@ -106,12 +104,10 @@ const employeeManagement = ({ navigation }) => {
 
             <View style={{ borderColor: "#FFFFFF" }}>
               <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                {" "}
                 Kelly James
               </Text>
               <View style={{ margin: "2%" }}></View>
               <Text style={{ fontSize: 11, color: "#FFFFFF" }}>
-                {" "}
                 +1 647 653 2353
               </Text>
             </View>
@@ -150,12 +146,10 @@ const employeeManagement = ({ navigation }) => {
 
             <View style={{ borderColor: "#FFFFFF" }}>
               <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                {" "}
                 Kelly James
               </Text>
               <View style={{ margin: "2%" }}></View>
               <Text style={{ fontSize: 11, color: "#FFFFFF" }}>
-                {" "}
                 +1 647 653 2353
               </Text>
             </View>
@@ -193,12 +187,10 @@ const employeeManagement = ({ navigation }) => {
 
             <View style={{ borderColor: "#FFFFFF" }}>
               <Text style={{ fontSize: 13, color: "#FFFFFF" }}>
-                {" "}
                 Kelly James
               </Text>
               <View style={{ margin: "2%" }}></View>
               <Text style={{ fontSize: 11, color: "#FFFFFF" }}>
-                {" "}
                 +1 647 653 2353
               </Text>
             </View>
