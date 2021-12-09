@@ -38,12 +38,18 @@ import businessoffer from "./Compoenet/businessoffer";
 import businessofferone from "./Compoenet/businessofferone";
 import businessoffertwo from "./Compoenet/businessoffertwo";
 import employeeManagement from "./Compoenet/employeeManagement";
+import DrawerNavigator from "./Navigation/Drawer";
 
 const stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <stack.Navigator>
+      <stack.Navigator initialRouteName="DrawerNavigator">
+        <stack.Screen
+          options={{ headerShown: false }}
+          name="DrawerNavigator"
+          component={DrawerNavigator}
+        />
         <stack.Screen
           options={{ headerShown: false }}
           name="Getstarted"
