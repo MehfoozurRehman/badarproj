@@ -2,6 +2,7 @@ import * as React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import DrawerContent from "./DrawerContent";
 import HomeScreen from "../Screens/HomeScreen";
+import TabNavigator from "./Tab";
 
 const Drawer = createDrawerNavigator();
 
@@ -27,7 +28,7 @@ export default function DrawerNavigator() {
         );
       }}
     >
-      <Drawer.Screen name="Find your vendors" component={HomeScreen} />
+      <Drawer.Screen name="Find your vendors" component={TabNavigator} />
       <Drawer.Screen name="Manage employees" component={HomeScreen} />
       <Drawer.Screen name="Referrals" component={HomeScreen} />
       <Drawer.Screen name="Invite your customers" component={HomeScreen} />
