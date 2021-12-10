@@ -39,8 +39,8 @@ export default function SidePanel({ setSidePanel }) {
           style={{ marginRight: "auto" }}
         >
           <Image
-            style={{ tintColor: "#90EDD9", width: 20, height: 20 }}
-            source={require("../assets/link.png")}
+            style={{ tintColor: "#90EDD9", width: 25, height: 15 }}
+            source={require("../assets/sidePanelClose.png")}
           />
         </TouchableOpacity>
         <View>
