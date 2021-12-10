@@ -36,6 +36,15 @@ function SettingsScreen({ navigation }) {
     </View>
   );
 }
+function ScanScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Button onPress={() => navigation.openDrawer()} title="Open drawer" />
+      <View style={{ height: 100 }} />
+      <Button onPress={() => navigation.navigate("Home")} title="Go to Home" />
+    </View>
+  );
+}
 
 const Tab = createBottomTabNavigator();
 
@@ -68,10 +77,10 @@ export default function TabNavigator() {
               <Image
                 source={
                   focused
-                    ? require("../assets/link.png")
-                    : require("../assets/threelines.png")
+                    ? require("../assets/home-active.png")
+                    : require("../assets/home.png")
                 }
-                style={{ marginBottom: 15, width: 22, height: 22 }}
+                style={{ marginBottom: 15, width: 25, height: 25 }}
               />
               {focused && (
                 <View
@@ -88,7 +97,7 @@ export default function TabNavigator() {
         }}
       />
       <Tab.Screen
-        name="Settings"
+        name="Gem"
         component={SettingsScreen}
         options={{
           tabBarIcon: ({ color, focused }) => (
@@ -102,10 +111,10 @@ export default function TabNavigator() {
               <Image
                 source={
                   focused
-                    ? require("../assets/link.png")
-                    : require("../assets/threelines.png")
+                    ? require("../assets/gem-active.png")
+                    : require("../assets/gem.png")
                 }
-                style={{ marginBottom: 15, width: 22, height: 22 }}
+                style={{ marginBottom: 15, width: 25, height: 25 }}
               />
               {focused && (
                 <View
@@ -122,8 +131,8 @@ export default function TabNavigator() {
         }}
       />
       <Tab.Screen
-        name="Home1"
-        component={HomeScreen}
+        name="Scan"
+        component={ScanScreen}
         options={{
           tabBarIcon: ({ color, focused }) => (
             <View
@@ -136,27 +145,18 @@ export default function TabNavigator() {
               <Image
                 source={
                   focused
-                    ? require("../assets/link.png")
-                    : require("../assets/threelines.png")
+                    ? require("../assets/scan.png")
+                    : require("../assets/scan.png")
                 }
-                style={{ marginBottom: 15, width: 22, height: 22 }}
+                style={{ width: 60, height: 60 }}
               />
-              {focused && (
-                <View
-                  style={{
-                    height: 2,
-                    width: 60,
-                    backgroundColor: color,
-                    borderRadius: 3,
-                  }}
-                />
-              )}
             </View>
           ),
+          tabBarStyle: { display: "none" },
         }}
       />
       <Tab.Screen
-        name="Settings1"
+        name="Chat"
         component={SettingsScreen}
         options={{
           tabBarIcon: ({ color, focused }) => (
@@ -170,10 +170,10 @@ export default function TabNavigator() {
               <Image
                 source={
                   focused
-                    ? require("../assets/link.png")
-                    : require("../assets/threelines.png")
+                    ? require("../assets/chat-active.png")
+                    : require("../assets/chat.png")
                 }
-                style={{ marginBottom: 15, width: 22, height: 22 }}
+                style={{ marginBottom: 15, width: 25, height: 25 }}
               />
               {focused && (
                 <View
@@ -190,7 +190,7 @@ export default function TabNavigator() {
         }}
       />
       <Tab.Screen
-        name="Settings2"
+        name="Time"
         component={SettingsScreen}
         options={{
           tabBarIcon: ({ color, focused }) => (
@@ -204,10 +204,10 @@ export default function TabNavigator() {
               <Image
                 source={
                   focused
-                    ? require("../assets/link.png")
-                    : require("../assets/threelines.png")
+                    ? require("../assets/time-active.png")
+                    : require("../assets/time.png")
                 }
-                style={{ marginBottom: 15, width: 22, height: 22 }}
+                style={{ marginBottom: 15, width: 25, height: 25 }}
               />
               {focused && (
                 <View
