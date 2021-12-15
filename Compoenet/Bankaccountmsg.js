@@ -17,7 +17,21 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 const Bankaccountmsg = ({ navigation }) => {
   return (
     <KeyboardAvoidingView behavior="padding" style={{ flex: 1 }}>
+
+
+      <View style={{ width: '100%', height: 120, backgroundColor: "#1C213E" }}>
+        <View style={{ marginTop: '15%', flexDirection: 'row' }}>
+          <TouchableOpacity style={{marginLeft:"8%",marginTop:'1.5%'}} >
+            <Image source={require("../assets/whitearrow.png")} />
+          </TouchableOpacity>
+
+          <Text style={{ color: 'white', fontWeight: 'bold', marginLeft:'26%',fontSize:17 }}>Messages</Text>
+        </View>
+      </View>
       <View style={styles.container}>
+
+
+
         <ScrollView>
           <TouchableOpacity>
             <View
@@ -504,6 +518,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#1C213E",
+
     // alignItems: 'center',
   },
 });

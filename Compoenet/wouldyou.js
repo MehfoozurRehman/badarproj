@@ -15,7 +15,12 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 const Mywouldyou = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <View style={{ paddingTop: "35%", alignItems: "center" }}>
+      <View style={{ paddingTop: "15%", paddingLeft: "8%" }}>
+            <TouchableOpacity  onPress={() => navigation.navigate("My112211")} >
+              <Image source={require("../assets/leftarrow.png")} />
+            </TouchableOpacity>
+            </View>
+      <View style={{ paddingTop: "15%", alignItems: "center" }}>
         <Text
           style={{
             color: "white",
@@ -57,7 +62,7 @@ const Mywouldyou = ({ navigation }) => {
         </TouchableOpacity>
 
         <TouchableOpacity
-          onPress={() => navigation.navigate("Balance")}
+          onPress={() => navigation.navigate("DrawerNavigator")}
           style={{
             borderWidth: 2,
             justifyContent: "center",
@@ -85,7 +90,7 @@ const Mywouldyou = ({ navigation }) => {
         </TouchableOpacity>
 
         <TouchableOpacity
-          onPress={() => navigation.navigate("Balance1")}
+   onPress={() => navigation.navigate("DrawerNavigator")}
           style={{
             borderWidth: 2,
             justifyContent: "center",

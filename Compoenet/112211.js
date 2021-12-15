@@ -18,11 +18,16 @@ const My112211 = ({ navigation }) => {
   return (
     <ScrollView style={{ backgroundColor: "#1C213E" }}>
       <View style={styles.container}>
+      <View    style={{ paddingTop: "15%", paddingLeft: "8%" }}>
+            <TouchableOpacity onPress={() => navigation.navigate("My12346")}>
+              <Image source={require("../assets/leftarrow.png")} />
+            </TouchableOpacity>
+            </View>
         {/* <View style={{paddingTop: '15%', paddingLeft:'8%'}}>
     <TouchableOpacity>
         <Image 
                 source={require('../assets/leftarrow.png')} /></TouchableOpacity></View> */}
-        <View style={{ paddingTop: "20%", alignItems: "center" }}>
+        <View style={{ paddingTop: "10%", alignItems: "center" }}>
           <Text style={{ color: "white", fontSize: 25, fontWeight: "bold" }}>
             Your Profile
           </Text>
@@ -132,9 +137,15 @@ const My112211 = ({ navigation }) => {
                     textAlign: "center",
                   }}
                 >
-                  Remind Me Later
+                  Save
                 </Text>
               </TouchableOpacity>
+          
+          <TouchableOpacity 
+          onPress={() => navigation.navigate("DrawerNavigator")}
+          style={{marginTop:'9%'}}>
+          <Text style={{color:'#ACACAC'}}> Remind Me Later</Text>
+          </TouchableOpacity>
             </View>
           </KeyboardAvoidingView>
         </View>

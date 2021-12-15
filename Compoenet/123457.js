@@ -98,7 +98,7 @@ const My123457 = ({ navigation }) => {
             </Text>
           </TouchableOpacity>
         </View>
-        <Text
+        {/* <Text
           style={{
             color: "black",
             textAlign: "center",
@@ -107,7 +107,7 @@ const My123457 = ({ navigation }) => {
           }}
         >
           Already Have account? Sign in
-        </Text>
+        </Text> */}
       </View>
 
       {/* <TouchableOpacity onPress={()=>navigation.navigate('My12345')}

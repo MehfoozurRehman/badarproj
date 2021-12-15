@@ -73,14 +73,14 @@ const My12346 = ({ navigation }) => {
         >
           <Text
             style={{
-              color: "white",
+              color: "#6FB8A8",
               justifyContent: "center",
               fontSize: 15,
               fontWeight: "bold",
               textAlign: "center",
             }}
           >
-            SUBMIT
+    Next
           </Text>
         </TouchableOpacity>
       </View>

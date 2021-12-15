@@ -39,17 +39,18 @@ import businessofferone from "./Compoenet/businessofferone";
 import businessoffertwo from "./Compoenet/businessoffertwo";
 import employeeManagement from "./Compoenet/employeeManagement";
 import DrawerNavigator from "./Navigation/Drawer";
+import RequestMoney from "./Navigation/RequestMoney";
+import SendMoney from "./Compoenet/SendMoney";
+import UserpaymentComplete from "./Compoenet/UserPaymentComplete";
+import TransactionSuccess from "./Compoenet/TransactionSuccess";
+import Employeemanagementone from "./Compoenet/Employeemanagementone";
 
 const stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <stack.Navigator initialRouteName="DrawerNavigator">
-        <stack.Screen
-          options={{ headerShown: false }}
-          name="DrawerNavigator"
-          component={DrawerNavigator}
-        />
+      <stack.Navigator >
+        
         <stack.Screen
           options={{ headerShown: false }}
           name="Getstarted"
@@ -225,7 +226,45 @@ export default function App() {
           name="employeeManagement"
           component={employeeManagement}
         ></stack.Screen>
+
+<stack.Screen
+          options={{ headerShown: false }}
+          name="RequestMoney"
+          component={RequestMoney}
+        ></stack.Screen>
+
+<stack.Screen
+          options={{ headerShown: false }}
+          name="SendMoney"
+          component={SendMoney}
+        ></stack.Screen>
+
+<stack.Screen
+          options={{ headerShown: false }}
+          name="UserpaymentComplete"
+          component={UserpaymentComplete}
+        ></stack.Screen>
+
+<stack.Screen
+          options={{ headerShown: false }}
+          name="TransactionSuccess"
+          component={TransactionSuccess}
+        ></stack.Screen>
+
+<stack.Screen
+          options={{ headerShown: false }}
+          name="Employeemanagementone"
+          component={Employeemanagementone}
+        ></stack.Screen>
+
+<stack.Screen 
+          options={{ headerShown: false }}
+          name="DrawerNavigator"
+          component={DrawerNavigator}
+        />
+
       </stack.Navigator>
+      
     </NavigationContainer>
     // <View style={styles.container}>
     //   <View style={{ alignItems: 'center', paddingTop: 100 }}>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import {
+
   StyleSheet,
   Modal,
   Switch,
@@ -12,9 +13,11 @@ import {
   TouchableOpacity,
   ScrollViewBase,
 } from "react-native";
+import SidePanel from "../Navigation/SidePanel";
 
 const { width } = Dimensions.get("window");
 const Balance = ({ navigation }) => {
+  const [sidePanel, setSidePanel] = useState(false);
   const [isEnabled, setIsEnabled] = useState(false);
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
 
@@ -34,7 +37,7 @@ const Balance = ({ navigation }) => {
     <ScrollView style={{ backgroundColor: "#1C213E" }}>
       <View style={styles.container}>
         <View style={{ flexDirection: "row", marginTop: "15%" }}>
-          <TouchableOpacity style={{ marginRight: "57%" }}>
+          <TouchableOpacity onPress={()=>{ navigation.openDrawer( )}} style={{ marginRight: "57%" }}>
             <Image source={require("../assets/component.png")} />
           </TouchableOpacity>
 
@@ -54,7 +57,9 @@ const Balance = ({ navigation }) => {
             <Image source={require("../assets/trophy.png")} />
           </TouchableOpacity>
 
-          <TouchableOpacity
+          <TouchableOpacity onPress={() => {
+          setSidePanel(true);
+        }}
             style={{
               height: 38,
               width: 38,
@@ -79,7 +84,7 @@ const Balance = ({ navigation }) => {
         </View>
 
         <View
-          style={{
+          style={{flexDirection:'row',
             marginLeft: "8%",
             height: 65,
             width: 346,
@@ -88,8 +93,15 @@ const Balance = ({ navigation }) => {
           }}
         >
           <Text style={{ fontSize: 49, color: "#90EDD9", fontWeight: "bold" }}>
-            $ 4,142.19 +
+            $ 4,142.19 
           </Text>
+
+          <View style={{margin:'2%'}}></View>
+          <TouchableOpacity  onPress={() => navigation.navigate("Fundingsources")}>
+          <Text style={{ fontSize: 49, color: "#90EDD9", fontWeight: "bold" }}>
+               + 
+          </Text>
+          </TouchableOpacity>
         </View>
 
         <View
@@ -268,6 +280,7 @@ const Balance = ({ navigation }) => {
           }}
         >
           <TouchableOpacity
+          onPress={() => navigation.navigate("SendMoney")}
             style={{
               alignItems: "center",
               justifyContent: "center",
@@ -276,6 +289,7 @@ const Balance = ({ navigation }) => {
               height: 86,
               width: 94,
               borderRadius: 15,
+              
             }}
           >
             <View>
@@ -287,7 +301,7 @@ const Balance = ({ navigation }) => {
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity
+          <TouchableOpacity     onPress={() => navigation.navigate("RequestMoney")}
             style={{
               alignItems: "center",
               justifyContent: "center",
@@ -308,7 +322,7 @@ const Balance = ({ navigation }) => {
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity
+          <TouchableOpacity  onPress={() => navigation.navigate("qrcode")}
             style={{
               alignItems: "center",
               justifyContent: "center",
@@ -667,6 +681,9 @@ const Balance = ({ navigation }) => {
           <StatusBar style="auto" />
         </Modal>
       </View>
+      {sidePanel ? <SidePanel setSidePanel={setSidePanel} /> : null}
+
+
     </ScrollView>
   );
 };

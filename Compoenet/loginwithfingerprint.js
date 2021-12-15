@@ -53,7 +53,7 @@ const loginwithfingerprint = ({ navigation }) => {
         Secure Your Account {"\n"}
         With Touch ID
       </Text>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("halliegobel")}>
         <Text
           style={{
             marginTop: "5%",

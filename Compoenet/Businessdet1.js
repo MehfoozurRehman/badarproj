@@ -18,7 +18,12 @@ const Businessdet1 = ({ navigation }) => {
   return (
     <ScrollView style={{ backgroundColor: "#1C213E" }}>
       <View style={styles.container}>
-        <View style={{ paddingTop: "25%", alignItems: "center" }}>
+      <View  style={{ paddingTop: "15%", paddingLeft: "8%" }}>
+            <TouchableOpacity  onPress={() => navigation.navigate("Mytellus")} >
+              <Image source={require("../assets/leftarrow.png")} />
+            </TouchableOpacity>
+            </View>
+        <View style={{ paddingTop: "10%", alignItems: "center" }}>
           <Text
             style={{
               color: "white",
@@ -59,7 +64,7 @@ and sending stuff</Text> */}
           <TextInput
             multiline={true}
             style={{
-              height: 56,
+              height: 66,
               width: 330,
               borderRadius: 25,
               fontSize: 17,
@@ -69,7 +74,7 @@ and sending stuff</Text> */}
               backgroundColor: "#101426",
             }}
             placeholder="How Would you describe your
-                    business ?"
+             business to customers ?"
             placeholderTextColor="#707070"
             placeholderTextColor="white"
             color="white"
@@ -93,7 +98,7 @@ and sending stuff</Text> */}
               color="white"
             ></TextInput>
 
-            <TextInput
+            {/* <TextInput
               style={{
                 height: 56,
                 width: 330,
@@ -108,7 +113,7 @@ and sending stuff</Text> */}
               placeholderTextColor="#707070"
               placeholderTextColor="white"
               color="white"
-            ></TextInput>
+            ></TextInput> */}
           </KeyboardAvoidingView>
           <TouchableOpacity
             onPress={() => navigation.navigate("Businessdet2")}

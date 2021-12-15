@@ -2,6 +2,11 @@ import * as React from "react";
 import { Button, Image, Text, TouchableOpacity, View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import SidePanel from "./SidePanel";
+import Balance from "../Compoenet/Balance";
+import Transaction from "../Compoenet/Transaction";
+import qrcode from "../Compoenet/qrcode";
+import Useroffermap from "../Compoenet/Useroffermap";
+import Bankaccountmsg from "../Compoenet/Bankaccountmsg";
 
 function HomeScreen({ navigation }) {
   const [sidePanel, setSidePanel] = React.useState(false);
@@ -64,7 +69,7 @@ export default function TabNavigator() {
     >
       <Tab.Screen
         name="Home"
-        component={HomeScreen}
+        component={Balance}
         options={{
           tabBarIcon: ({ color, focused }) => (
             <View
@@ -98,7 +103,7 @@ export default function TabNavigator() {
       />
       <Tab.Screen
         name="Gem"
-        component={SettingsScreen}
+        component={Useroffermap}
         options={{
           tabBarIcon: ({ color, focused }) => (
             <View
@@ -132,7 +137,7 @@ export default function TabNavigator() {
       />
       <Tab.Screen
         name="Scan"
-        component={ScanScreen}
+        component={qrcode}
         options={{
           tabBarIcon: ({ color, focused }) => (
             <View
@@ -157,7 +162,7 @@ export default function TabNavigator() {
       />
       <Tab.Screen
         name="Chat"
-        component={SettingsScreen}
+        component={Bankaccountmsg}
         options={{
           tabBarIcon: ({ color, focused }) => (
             <View
@@ -191,7 +196,7 @@ export default function TabNavigator() {
       />
       <Tab.Screen
         name="Time"
-        component={SettingsScreen}
+        component={Transaction}
         options={{
           tabBarIcon: ({ color, focused }) => (
             <View

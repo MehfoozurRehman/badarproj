@@ -18,7 +18,15 @@ const Businessinfo = ({ navigation }) => {
   return (
     <ScrollView style={{ backgroundColor: "#1C213E" }}>
       <View style={styles.container}>
-        <View style={{ paddingTop: "25%", alignItems: "center" }}>
+        <View style={{ paddingTop: "15%", paddingLeft: "8%" }}>
+
+          <TouchableOpacity onPress={() => navigation.navigate("Businessdet2")} >
+            <Image source={require("../assets/leftarrow.png")} />
+          </TouchableOpacity>
+
+        </View>
+
+        <View style={{ paddingTop: "10%", alignItems: "center" }}>
           <Text style={{ color: "white", fontSize: 24, fontWeight: "bold" }}>
             Business Profile
           </Text>

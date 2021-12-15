@@ -92,7 +92,7 @@ const GetStarted = ({ navigation }) => {
             Already have acount?
           </Text>
 
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("halliegobel")}>
             <Text style={{ color: "white", fontSize: 15, fontWeight: "bold" }}>
               Sign in
             </Text>

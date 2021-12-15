@@ -18,7 +18,12 @@ const businessdet2 = ({ navigation }) => {
   return (
     <ScrollView style={{ backgroundColor: "#1C213E" }}>
       <View style={styles.container}>
-        <View style={{ paddingTop: "25%", alignItems: "center" }}>
+      <View style={{ paddingTop: "15%", paddingLeft: "8%" }}>
+            <TouchableOpacity onPress={() => navigation.navigate("Businessdet1")} >
+              <Image source={require("../assets/leftarrow.png")} />
+            </TouchableOpacity>
+            </View>
+        <View style={{ paddingTop: "10%", alignItems: "center" }}>
           <Text
             style={{
               color: "white",
@@ -27,7 +32,7 @@ const businessdet2 = ({ navigation }) => {
               textAlign: "center",
             }}
           >
-            Business Details{"\n"}(Sole Incorporated)
+            Business Details{"\n"}(Sole Proprietorship)
           </Text>
         </View>
 

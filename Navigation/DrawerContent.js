@@ -50,7 +50,7 @@ export default function DrawerContent({ navigation }) {
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
-            navigation.navigate("Manage employees");
+            navigation.navigate("employeeManagement");
             setActive("employees");
           }}
           style={

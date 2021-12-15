@@ -18,8 +18,10 @@ const Fundingsources = ({ navigation }) => {
   return (
     <KeyboardAvoidingView behavior="padding" style={{ flex: 1 }}>
       <View style={styles.container}>
+
+     
         <View style={{ paddingTop: "13%", paddingLeft: "8%" }}>
-          <TouchableOpacity>
+          <TouchableOpacity   onPress={() => navigation.navigate("Linkyourbank")} >
             <Image source={require("../assets/leftarrow.png")} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => navigation.navigate("Transaction")}>
@@ -106,7 +108,7 @@ and sending stuff</Text> */}
           >
             <Text
               style={{
-                color: "#FFFFFF",
+                color: "#90EDD8",
                 justifyContent: "center",
                 fontSize: 15,
                 fontWeight: "bold",
@@ -119,7 +121,7 @@ and sending stuff</Text> */}
         </View>
         <View style={{ alignItems: "center" }}>
           <TouchableOpacity
-            onPress={() => navigation.navigate("Useroffermap")}
+           onPress={() => navigation.navigate("DrawerNavigator")}
             style={{
               borderWidth: 2,
               justifyContent: "center",
@@ -133,7 +135,7 @@ and sending stuff</Text> */}
           >
             <Text
               style={{
-                color: "#FFFFFF",
+                color: "#90EDD8",
                 justifyContent: "center",
                 fontSize: 15,
                 fontWeight: "bold",

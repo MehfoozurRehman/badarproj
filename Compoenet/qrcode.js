@@ -19,9 +19,15 @@ const qrcode = ({ navigation }) => {
     <KeyboardAvoidingView behavior="padding" style={{ flex: 1 }}>
       <View style={styles.container}>
         <View style={{ paddingTop: "13%", paddingLeft: "8%" }}>
-          <TouchableOpacity>
+        <TouchableOpacity         onPress={() => navigation.navigate("DrawerNavigator")} style={{  }}>
+                <Image source={require("../assets/leftarrow.png")} />
+            </TouchableOpacity>
+
+
+
+          {/* <TouchableOpacity>
             <Image source={require("../assets/threelines.png")} />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
 
         <View
@@ -46,7 +52,7 @@ const qrcode = ({ navigation }) => {
         </Text>
 
         <View style={{ alignItems: "center" }}>
-          <TouchableOpacity
+          <TouchableOpacity         onPress={() => navigation.navigate("DrawerNavigator")}
             style={{
               borderWidth: 1.5,
               justifyContent: "center",

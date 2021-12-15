@@ -19,7 +19,7 @@ const employeeManagement = ({ navigation }) => {
     <KeyboardAvoidingView behavior="padding" style={{ flex: 1 }}>
       <View style={styles.container}>
         <View style={{ paddingTop: "13%", paddingLeft: "8%" }}>
-          <TouchableOpacity>
+          <TouchableOpacity         onPress={() => navigation.navigate("DrawerNavigator")}  >
             <Image source={require("../assets/leftarrow.png")} />
           </TouchableOpacity>
           <TouchableOpacity>
@@ -210,7 +210,7 @@ const employeeManagement = ({ navigation }) => {
 
           <View style={{ alignItems: "center" }}>
             <TouchableOpacity
-              onPress={() => navigation.navigate("qrcode")}
+              onPress={() => navigation.navigate("Employeemanagementone")}
               style={{
                 borderWidth: 2,
                 justifyContent: "center",

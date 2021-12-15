@@ -51,7 +51,7 @@ export default function SidePanel({ setSidePanel }) {
             style={styles.sidePanelItem}
           >
             <Text numberOfLines={1} style={styles.sidePanelItemText}>
-              Find your vendors
+              Public Profile 
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -61,7 +61,7 @@ export default function SidePanel({ setSidePanel }) {
             style={styles.sidePanelItem}
           >
             <Text numberOfLines={1} style={styles.sidePanelItemText}>
-              Find your vendors
+              Private info
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -71,7 +71,7 @@ export default function SidePanel({ setSidePanel }) {
             style={styles.sidePanelItem}
           >
             <Text numberOfLines={1} style={styles.sidePanelItemText}>
-              Find your vendors
+              Security
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -81,7 +81,7 @@ export default function SidePanel({ setSidePanel }) {
             style={styles.sidePanelItem}
           >
             <Text numberOfLines={1} style={styles.sidePanelItemText}>
-              Find your vendors
+              Preferences
             </Text>
           </TouchableOpacity>
         </View>

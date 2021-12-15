@@ -15,7 +15,12 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 const Mytellus = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <View style={{ paddingTop: "35%", alignItems: "center" }}>
+      <View style={{ paddingTop: "15%", paddingLeft: "8%" }}>
+            <TouchableOpacity  onPress={() => navigation.navigate("Mywouldyou")} >
+              <Image source={require("../assets/leftarrow.png")} />
+            </TouchableOpacity>
+            </View>
+      <View style={{ paddingTop: "15%", alignItems: "center" }}>
         <Text
           style={{
             color: "white",
@@ -24,7 +29,7 @@ const Mytellus = ({ navigation }) => {
             textAlign: "center",
           }}
         >
-          Tell Us About Your Business
+          Tell Us About Your{"\n"} Business
         </Text>
       </View>
 

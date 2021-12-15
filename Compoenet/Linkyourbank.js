@@ -20,7 +20,7 @@ const Linkyourbank = ({ navigation }) => {
       <ScrollView style={{ backgroundColor: "#1C213E" }}>
         <View style={styles.container}>
           <View style={{ paddingTop: "15%", paddingLeft: "8%" }}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate("Yourmetalid")} >
               <Image source={require("../assets/leftarrow.png")} />
             </TouchableOpacity>
 
