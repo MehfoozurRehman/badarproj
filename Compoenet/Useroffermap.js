@@ -58,7 +58,9 @@ const Useroffermap = ({ navigation }) => {
           <TouchableOpacity>
             <Image source={require("../assets/mapmarker.png")} />
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity
+          onPress={()=>navigation.navigate("UserOfferList")}
+          >
             <Image
               style={{ marginLeft: "15%" }}
               source={require("../assets/grid.png")}

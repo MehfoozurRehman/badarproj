@@ -4,11 +4,15 @@ import { StyleSheet, KeyboardAvoidingView, ScrollView, TouchableOpacity, Text, V
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { CheckBox } from "react-native-elements";
+import { useState } from 'react';
+
 
 const businessofferone = ({ navigation }) => {
 
+    const [checked, setchecked] = useState(false);
     return (
-        <KeyboardAvoidingView behavior="padding" style={{ flex: 1 }} >
+
 
             <View style={styles.container}>
                 <View style={{ paddingTop: '14%', marginLeft: '8%' }}>
@@ -95,15 +99,21 @@ const businessofferone = ({ navigation }) => {
                 <TouchableOpacity>
                     <View style={{ flexDirection: 'row', marginLeft: '8%', marginTop: '10%' }}>
 
-                        <Image
-                            source={require('../assets/iconplus.png')} />
-                        <View style={{ margin: '1%' }}>
+                    <CheckBox
+                checked={checked}
+                onPress={() => setchecked(!checked)}
+                checkedColor="#90EDD9"
+                uncheckedColor="#90EDD9"
+              />
+                        <View style={{ marginTop: '4%' }}>
 
-                        </View>
                         <Text style={{
                             color: 'white', fontSize: 14, marginTop: '.5%'
 
                         }}>Set Expiry</Text>
+
+                        </View>
+
 
 
 
@@ -148,7 +158,9 @@ const businessofferone = ({ navigation }) => {
                     <View style={{ alignItems: 'center' }}>
 
 
-                        <TouchableOpacity style={{
+                        <TouchableOpacity
+                        onPress={()=>navigation.navigate("businessoffer")}
+                        style={{
                             borderWidth: 2, justifyContent: 'center', alignItems: 'center',
                             borderColor: '#90EDD8', height: 44, width: 115, borderRadius: 25,
                         }}>
@@ -173,7 +185,7 @@ const businessofferone = ({ navigation }) => {
 
             </View>
 
-        </KeyboardAvoidingView>
+
     );
 }
 export default businessofferone;

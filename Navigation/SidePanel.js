@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function SidePanel({ setSidePanel }) {
+export default function SidePanel({ setSidePanel, navigation }) {
   return (
     <View
       style={{
@@ -46,17 +46,17 @@ export default function SidePanel({ setSidePanel }) {
         <View>
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate("Find your vendors");
+              navigation.navigate("Support");
             }}
             style={styles.sidePanelItem}
           >
             <Text numberOfLines={1} style={styles.sidePanelItemText}>
-              Public Profile 
+              Public Profile
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate("Find your vendors");
+              navigation.navigate("Support");
             }}
             style={styles.sidePanelItem}
           >
@@ -66,7 +66,7 @@ export default function SidePanel({ setSidePanel }) {
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate("Find your vendors");
+              navigation.navigate("Support");
             }}
             style={styles.sidePanelItem}
           >
@@ -76,7 +76,7 @@ export default function SidePanel({ setSidePanel }) {
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate("Find your vendors");
+              navigation.navigate("Support");
             }}
             style={styles.sidePanelItem}
           >
@@ -89,7 +89,7 @@ export default function SidePanel({ setSidePanel }) {
           <View style={{ alignItems: "center", marginBottom: 20 }}>
             <TouchableOpacity
               onPress={() => {
-                navigation.navigate("Find your vendors");
+                navigation.navigate("Support");
               }}
               style={styles.sidePanelItem}
             >
@@ -124,7 +124,7 @@ export default function SidePanel({ setSidePanel }) {
 
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate("Find your vendors");
+              navigation.navigate("My12346");
             }}
             style={styles.sidePanelItem}
           >

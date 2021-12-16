@@ -44,6 +44,12 @@ import SendMoney from "./Compoenet/SendMoney";
 import UserpaymentComplete from "./Compoenet/UserPaymentComplete";
 import TransactionSuccess from "./Compoenet/TransactionSuccess";
 import Employeemanagementone from "./Compoenet/Employeemanagementone";
+import HomeScreen from "./Screens/HomeScreen";
+import UserOfferList from "./Compoenet/UserOfferList";
+import chat from "./Compoenet/chat";
+import PersonalProfile from "./Compoenet/PersonalProfile";
+import Security from "./Compoenet/Security";
+import Preferences from "./Compoenet/Preferences";
 
 const stack = createNativeStackNavigator();
 export default function App() {
@@ -150,11 +156,8 @@ export default function App() {
 
         <stack.Screen
           options={{
-            title: "              Messages",
-            headerStyle: {
-              backgroundColor: "#1C213E",
-            },
-            headerTintColor: "#FFFFFF",
+ 
+            headerShown:false
           }}
           name="Bankaccountmsg"
           component={Bankaccountmsg}
@@ -261,6 +264,39 @@ export default function App() {
           options={{ headerShown: false }}
           name="DrawerNavigator"
           component={DrawerNavigator}
+        />
+
+<stack.Screen 
+          options={{ headerShown: false }}
+          name="HomeScreen"
+          component={HomeScreen}
+        />
+
+<stack.Screen 
+          options={{ headerShown: false }}
+          name="UserOfferList"
+          component={UserOfferList}
+        />
+
+<stack.Screen 
+          options={{ headerShown: false }}
+          name="chat"
+          component={chat}
+        />
+        <stack.Screen 
+          options={{ headerShown: false }}
+          name="PersonalProfile"
+          component={PersonalProfile}
+        />
+        <stack.Screen 
+          options={{ headerShown: false }}
+          name="Security"
+          component={Security}
+        />
+               <stack.Screen 
+          options={{ headerShown: false }}
+          name="Preferences"
+          component={Preferences}
         />
 
       </stack.Navigator>

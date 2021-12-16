@@ -124,7 +124,10 @@ const My1122 = ({ navigation }) => {
               Already have acount?
             </Text>
 
-            <TouchableOpacity onPress={() => navigation.navigate("halliegobel")}  style={{ marginLeft: "1%" }}>
+            <TouchableOpacity 
+            // onPress={() => navigation.navigate("halliegobel")} 
+                      onPress={() => navigation.navigate("Preferences")}
+            style={{ marginLeft: "1%" }}>
               <Text style={{ color: "#1E32FA", fontSize: 15 }}>Sign in</Text>
             </TouchableOpacity>
           </View>

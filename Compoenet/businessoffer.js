@@ -44,8 +44,8 @@ const businessoffer = ({ navigation }) => {
             justifyContent: "center",
             alignSelf: "center",
             height: 70,
-            width: 340,
-            borderWidth: "2",
+            width: 440,
+            
           }}
         >
           <View style={{ flexDirection: "row" }}>
@@ -54,20 +54,35 @@ const businessoffer = ({ navigation }) => {
                 justifyContent: "center",
                 height: 60,
                 width: 45,
-                borderWidth: 2,
+
+                marginTop:'1%'
               }}
             >
               <CheckBox
                 checked={checked}
                 onPress={() => setchecked(!checked)}
-                checkedColor="green"
-                uncheckedColor="green"
+                checkedColor="#90EDD9"
+                uncheckedColor="#90EDD9"
               />
             </View>
-            <View style={{ height: 50, width: 150, borderWidth: 1 }}>
+            <View style={{ height: 50, width: 150 }}>
               <Text style={{ marginTop: "14%", color: "white", fontSize: 14 }}>
                 Show expired offers
               </Text>
+              
+            </View>
+            <View style={{ height: 50, marginTop:'4%',width: 200,flexDirection:"row" }}>
+            <View style={{marginTop:'1%'}}>
+            <Image source={require('../assets/img/plusg.png')} />
+            </View>
+              <TouchableOpacity
+              
+              onPress={()=>navigation.navigate("businessofferone")}
+              >
+              <Text style={{ marginTop: "1%",marginLeft:'5%', color: "white", fontSize: 14 }}>
+                Create New offer
+              </Text>
+              </TouchableOpacity>
             </View>
           </View>
 
@@ -368,6 +383,8 @@ const businessoffer = ({ navigation }) => {
 
         <View style={{ alignItems: "center" }}>
           <TouchableOpacity
+            
+            onPress={()=>navigation.navigate("businessofferone")}
             style={{
               borderWidth: 2,
               justifyContent: "center",

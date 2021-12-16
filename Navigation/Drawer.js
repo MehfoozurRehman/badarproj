@@ -3,6 +3,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import DrawerContent from "./DrawerContent";
 import HomeScreen from "../Screens/HomeScreen";
 import TabNavigator from "./Tab";
+import businessoffer from "../Compoenet/businessoffer";
 
 const Drawer = createDrawerNavigator();
 
@@ -32,7 +33,7 @@ export default function DrawerNavigator() {
       <Drawer.Screen name="Manage employees" component={HomeScreen} />
       <Drawer.Screen name="Referrals" component={HomeScreen} />
       <Drawer.Screen name="Invite your customers" component={HomeScreen} />
-      <Drawer.Screen name="Offers" component={HomeScreen} />
+      <Drawer.Screen name="Offers" component={businessoffer} />
       <Drawer.Screen name="Social media" component={HomeScreen} />
       <Drawer.Screen
         name="Boost your buisness visibility"

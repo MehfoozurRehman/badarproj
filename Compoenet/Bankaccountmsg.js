@@ -33,7 +33,9 @@ const Bankaccountmsg = ({ navigation }) => {
 
 
         <ScrollView>
-          <TouchableOpacity>
+          <TouchableOpacity
+          onPress={()=>navigation.navigate("chat")}
+          >
             <View
               style={{
                 backgroundColor: "#0B0F23",
